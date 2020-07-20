@@ -1,0 +1,387 @@
+@font-face {
+  src: url(fonts/Montserrat-Medium.ttf);
+  font-family: mont;
+}
+
+/***********************************************************************************************
+
+                       *****************COLORS*******************
+                                FONT DARK GREY  :  #444649
+                                FONT LIGHT GREY :  #616161
+                                BLUE            :  #04c2c9
+                                PINK            :  #e31b6d
+                                NAVI DARK GREY  :  #1b242f
+
+************************************************************************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: mont;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("images/demo-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #f9f1e9;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.main-title h1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+.thin {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #e31b6d;
+}
+
+.main-title a {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px 10px;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.fa {
+  margin-left: 15px;
+}
+
+.fa-arrow-right {
+  transition: all 0.3s ease;
+}
+
+.main-title a:hover .fa-arrow-right {
+  transform: rotate(90deg);
+}
+
+.main-title a:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+  transform: scale(1.1);
+}
+
+#home {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.navi {
+  border-bottom: 3px solid #04c2c9;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: #1b242f;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #e31b6d;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.about {
+  min-height: 50vh;
+  background-color: white;
+}
+
+.sub-section {
+  width: 88%;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444649;
+}
+
+.header-bar {
+  height: 4px;
+  width: 70px;
+  background-color: #444649;
+  margin: 20px auto 100px auto;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.bullet {
+  width: 24%;
+  background-color: white;
+}
+
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.8px;
+  background: #04c2c9;
+  margin: 29px auto;
+  margin-bottom: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 29px solid #04c2c9;
+}
+.hexagon::after {
+  top: 100%;
+  border-top: 29px solid #04c2c9;
+}
+
+#speed {
+  font-size: 5.3rem;
+  color: white;
+}
+
+.label-heading {
+  font-size: 3rem;
+  color: #444649;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.about-name {
+  font-size: 3rem;
+  color: #04c2c9;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+.label-text {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 200;
+  color: #616161;
+  line-height: 2.4rem;
+}
+
+.sub-about {
+  min-height: 30vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-about-1 {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sub-about-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 10px 0;
+  background-color: rgb(238, 238, 238, 0.7);
+  border-radius: 15px;
+}
+
+.sub-about-2 .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-img {
+  height: 50px;
+  width: 50px;
+}
+
+.img-box {
+  width: 15%;
+}
+
+.img-con {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.img-desc {
+  text-align: center;
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-sub {
+  padding: 0 0 100px 0;
+}
+
+.project-sub-child {
+  padding: 100px 0;
+}
+
+.project-sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.project-sec-1 img {
+  width: 100%;
+}
+
+.project-sec-2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-sec-2 .label-heading {
+  color: #e31b6d;
+}
+
+.project-btn {
+  text-align: center;
+  padding: 30px;
+}
+
+.project-btn a {
+  padding: 12px 30px;
+  background-color: #04c2c9;
+  border: 1px solid #04c2c9;
+  border-radius: 30px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+.project-btn a:hover {
+  background-color: rgba(4, 194, 201, 0.8);
+  box-shadow: 0 5px 10px #04c2c9;
+}
+.project-btn a:active {
+  background-color: rgba(4, 194, 201);
+  box-shadow: 0 3px 5px #04c2c9;
+}
+
+.portfolio-sub-section {
+  padding: 100px 0;
+  width: 88%;
+  margin: 0 auto;
+}
+.portfolio-1 {
+  padding-top: 0;
+}
+.portfolio-last {
+  padding-bottom: 0;
+}
+
+.contact {
+  background-color: #252934;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact .header-bar {
+  background-color: white;
+}
+
+.active {
+  color: #e31b6d;
+}
