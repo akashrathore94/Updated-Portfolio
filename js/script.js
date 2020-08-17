@@ -16,3 +16,14 @@ var waypoint1 = new Waypoint({
   },
   offset: "55%",
 });
+
+var waypoint2 = new Waypoint({
+  element: document.getElementById("portfolio"),
+  handler: function (direction) {
+    removeActive();
+    if (direction == "down")
+      document.querySelector(".portfolio-link").classList.add("active");
+    else document.querySelector(".about-link").classList.add("active");
+  },
+  offset: "55%",
+});
