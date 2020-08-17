@@ -27,14 +27,3 @@ var waypoint2 = new Waypoint({
   },
   offset: "55%",
 });
-
-var waypoint3 = new Waypoint({
-  element: document.getElementById("contact"),
-  handler: function (direction) {
-    removeActive();
-    if (direction == "down")
-      document.querySelector(".contact-link").classList.add("active");
-    else document.querySelector(".portfolio-link").classList.add("active");
-  },
-  offset: "55%",
-});
