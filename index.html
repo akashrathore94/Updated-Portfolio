@@ -28,23 +28,18 @@
   </head>
 
   <body>
-    <section class="container demo home" id="home">
-      <div class="content">
-        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-          <div class="main-title">
-            <h1 class="animate__animated animate__bounceInLeft del">
-              Hello, I'm
-              <span class="thin">Akash Rathore</span>.
-            </h1>
-            <h1 class="animate__animated animate__bounceInRight del">
-              I'm a web developer.
-            </h1>
-            <a href="#about" class="animate__animated animate__bounceIn del"
-              >View my work<i class="fa fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
+    <section class="home" id="home">
+      <div class="main-title">
+        <h1 class="animate__animated animate__bounceInLeft del">
+          Hello, I'm
+          <span class="thin">Akash Rathore</span>.
+        </h1>
+        <h1 class="animate__animated animate__bounceInRight del">
+          I'm a web developer.
+        </h1>
+        <a href="#about" class="animate__animated animate__bounceIn del"
+          >View my work<i class="fa fa-arrow-right"></i
+        ></a>
       </div>
     </section>
 
@@ -74,76 +69,9 @@
 
         <div class="header-bar bar-about"></div>
 
-        <!-- <div class="label">
-          <div class="bullet">
-            <div class="hex-wrap">
-              <div class="hexagon">
-                <i class="material-icons" id="speed">speed</i>
-              </div>
-            </div>
-            <div class="animated">
-              <div class="label-heading">
-                Fast
-              </div>
-              <div class="label-text">
-                Fast load times and lag free interaction, my highest priority.
-              </div>
-            </div>
-          </div>
-
-          <div class="bullet">
-            <div class="hex-wrap">
-              <div class="hexagon">
-                <i class="material-icons" id="speed">phonelink</i>
-              </div>
-            </div>
-            <div class="animated">
-              <div class="label-heading">
-                Responsive
-              </div>
-              <div class="label-text">
-                My layouts will work on any device, big or small.
-              </div>
-            </div>
-          </div>
-
-          <div class="bullet">
-            <div class="hex-wrap">
-              <div class="hexagon">
-                <i class="material-icons" id="speed">emoji_objects</i>
-              </div>
-            </div>
-            <div class="animated">
-              <div class="label-heading">
-                Intuitive
-              </div>
-              <div class="label-text">
-                Strong preference for easy to use, intuitive UX/UI.
-              </div>
-            </div>
-          </div>
-
-          <div class="bullet">
-            <div class="hex-wrap">
-              <div class="hexagon">
-                <i class="material-icons" id="speed">miscellaneous_services</i>
-              </div>
-            </div>
-            <div class="animated">
-              <div class="label-heading">
-                Dynamic
-              </div>
-              <div class="label-text">
-                Websites don't have to be static,<br />I love making pages come
-                to life.
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <div class="label">
           <div class="label-1">
-            <div class="bullet">
+            <div class="bullet js-bul1">
               <div class="hex-wrap">
                 <div class="hexagon">
                   <i class="material-icons" id="speed">speed</i>
@@ -158,7 +86,7 @@
                 </div>
               </div>
             </div>
-            <div class="bullet">
+            <div class="bullet js-bul2">
               <div class="hex-wrap">
                 <div class="hexagon">
                   <i class="material-icons" id="speed">phonelink</i>
@@ -176,7 +104,7 @@
           </div>
 
           <div class="label-1">
-            <div class="bullet">
+            <div class="bullet js-bul3">
               <div class="hex-wrap">
                 <div class="hexagon">
                   <i class="material-icons" id="speed">emoji_objects</i>
@@ -191,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="bullet">
+            <div class="bullet js-bul4">
               <div class="hex-wrap">
                 <div class="hexagon">
                   <i class="material-icons" id="speed"
@@ -213,7 +141,7 @@
         </div>
 
         <div class="sub-about">
-          <div class="sub-about-1">
+          <div class="sub-about-1 js-about">
             <div class="label-heading">
               Hey, I'm <span class="about-name">Akash</span>.
             </div>
@@ -225,7 +153,7 @@
             </div>
           </div>
 
-          <div class="sub-about-2">
+          <div class="sub-about-2 js-skills">
             <div class="label-heading">
               Skills
             </div>
@@ -286,7 +214,7 @@
                 <div class="img-desc label-text">Smooth Animations</div>
               </div>
 
-              <div class="img-box">
+              <div class="img-box img-box-last">
                 <div class="img-con">
                   <img
                     src="images/best.png"
@@ -334,10 +262,10 @@
 
       <div class="portfolio-sub-section">
         <div class="project">
-          <div class="project-sec-1">
+          <div class="project-sec-1 js-budg-img">
             <img src="images/laptop-budegty.png" alt="backstage" />
           </div>
-          <div class="project-sec-2">
+          <div class="project-sec-2 js-budg-txt">
             <div class="label-heading">
               Budgety
             </div>
@@ -355,19 +283,19 @@
 
       <div class="portfolio-sub-section portfolio-last">
         <div class="project">
-          <div class="project-sec-1">
+          <div class="project-sec-1 js-third-img">
             <img src="images/laptop-budegty.png" alt="backstage" />
           </div>
-          <div class="project-sec-2">
+          <div class="project-sec-2 js-third-txt">
             <div class="label-heading">
-              The Backstage
+              Budgety
             </div>
             <div class="label-text">
-              A platform for automating data collection and reporting throughout
-              teams, operations and supply chains.
+              Budgety is a small web-app use to keep records of your monthly
+              budget. It is built using HTML5, CSS3 and vanilla javascript.
             </div>
             <div class="project-btn">
-              <a href="#">Preview</a>
+              <a href="./budgety/budgety.html" target="_blank">Preview</a>
             </div>
           </div>
         </div>
@@ -381,9 +309,6 @@
       </div>
     </section>
 
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/demo.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>

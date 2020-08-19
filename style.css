@@ -27,32 +27,27 @@ html {
 
 body {
   font-family: mont;
-  overflow-x: hidden;
 }
 
-.large-header {
-  position: relative;
-  width: 100%;
-  background: #111;
+section {
+  min-height: 100vh;
+  padding: 100px 0;
   overflow: hidden;
+}
+
+.home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url("images/demo-bg.jpg");
   background-size: cover;
-  background-position: center center;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-title {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 50%;
-  left: 50%;
   font-size: 4.5rem;
   font-weight: 300;
   color: #f9f1e9;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
 .main-title h1 {
@@ -71,9 +66,9 @@ body {
   border: 2px solid #fff;
   border-radius: 5px;
   background-color: transparent;
-  padding: 10px 10px;
+  padding: 0.5em 0.625em;
   color: white;
-  margin-top: 20px;
+  margin-top: 2rem;
   transition: all 0.3s ease;
   text-decoration: none;
   color: white;
@@ -88,19 +83,14 @@ body {
   transition: all 0.3s ease;
 }
 
-.main-title a:hover .fa-arrow-right {
-  transform: rotate(90deg);
-}
-
 .main-title a:hover {
   background-color: #04c2c9;
   border-color: #04c2c9;
-  transform: scale(1.1);
+  transform: scaleX(1.1);
 }
 
-#home {
-  overflow-x: hidden;
-  padding: 0;
+.main-title a:hover .fa-arrow-right {
+  transform: rotate(90deg);
 }
 
 .navi {
@@ -116,6 +106,7 @@ nav {
   padding: 1.8rem;
   margin: auto;
   width: 90%;
+  max-width: 1700px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -146,17 +137,13 @@ nav a:hover {
   color: #e31b6d;
 }
 
-section {
-  min-height: 100vh;
-  padding: 100px 0;
-}
-
 .about {
   background-color: white;
 }
 
 .sub-section {
   width: 88%;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -173,17 +160,6 @@ section h2 {
   background-color: #444649;
   margin: 20px auto 100px auto;
 }
-
-/* .label {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.bullet {
-  width: 24%;
-  background-color: white;
-} */
 
 .label {
   display: flex;
@@ -240,7 +216,7 @@ section h2 {
   color: #444649;
   text-align: center;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
 }
 
 .about-name {
@@ -260,7 +236,6 @@ section h2 {
 }
 
 .sub-about {
-  min-height: 30vh;
   display: flex;
   justify-content: space-between;
 }
@@ -279,7 +254,7 @@ section h2 {
   align-items: center;
   flex-direction: column;
   width: 62%;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   background-color: rgb(238, 238, 238, 0.7);
   border-radius: 15px;
 }
@@ -310,20 +285,12 @@ section h2 {
 }
 
 .portfolio {
-  background-color: #f5f5f5;
+  background-color: rgb(238, 238, 238, 0.4);
 }
 
 .project {
   display: flex;
   justify-content: space-between;
-}
-
-.project-sub {
-  padding: 0 0 100px 0;
-}
-
-.project-sub-child {
-  padding: 100px 0;
 }
 
 .project-sec-1 {
@@ -355,10 +322,10 @@ section h2 {
 }
 
 .project-btn a {
-  padding: 12px 30px;
+  padding: 0.5em 1.2em;
   background-color: #04c2c9;
   border: 1px solid #04c2c9;
-  border-radius: 30px;
+  border-radius: 3rem;
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -378,10 +345,13 @@ section h2 {
 }
 
 .portfolio-sub-section {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 88%;
+  max-width: 1600px;
   margin: 0 auto;
 }
+
 .portfolio-1 {
   padding-top: 0;
 }
@@ -434,12 +404,165 @@ section h2 {
 }
 
 @media only screen and (max-width: 800px) {
+  /*SKILLS SECTION*/
+  .sub-about-2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .sub-about-2 .row {
+    display: block;
+  }
+  .img-box {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-con {
+    margin-right: 2.5rem;
+  }
+
+  /*PROJECTS*/
+  .project {
+    display: block;
+  }
+  .project-sec-1,
+  .project-sec-2 {
+    width: 100%;
+  }
+  .project-sec-1 {
+    margin-bottom: 5rem;
+  }
+  .project-sec-1 img {
+    width: 80%;
+    text-align: center;
+  }
+
+  /*MENU*/
+  nav {
+    padding: 1.8rem 3rem;
+    width: 100%;
+  }
+  nav h1 {
+    flex: 1 1 2rem;
+  }
+  nav ul {
+    flex: 2 1 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sub-section {
+    width: 90%;
+  }
+  .label-1 {
+    display: block;
+  }
+  .bullet {
+    width: 100%;
+  }
+  .label-text {
+    font-size: 1.4rem;
+  }
+
+  .label-heading,
+  .about-name {
+    font-size: 2rem;
+  }
+
+  .sub-about-1,
+  .sub-about-2 {
+    width: 100%;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  section h2 {
+    font-size: 3rem;
+  }
+
+  .header-bar {
+    height: 3px;
+    width: 40px;
+    background-color: #444649;
+    margin: 10px auto 80px auto;
+  }
+  .label-heading {
+    margin-bottom: 1rem;
+  }
+  .js-bul4 {
+    margin-bottom: 60px;
+  }
+  .img-box-last {
+    margin-bottom: 0;
+  }
+  .portfolio-sub-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 90%;
+  }
+
+  .portfolio-1 {
+    padding-top: 0;
+  }
+  .portfolio-last {
+    padding-bottom: 0;
+  }
+  .project-btn {
+    padding: 30px;
+  }
+  .project-sec-1 img {
+    width: 100%;
+  }
+
+  .main-title {
+    padding: 0 1rem;
+  }
+  .main-title h1 {
+    font-size: 3rem;
+  }
+
+  .thin {
+    font-size: 3rem;
+  }
+
+  .main-title a {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-sec-1 {
+    margin-bottom: 2.5rem;
+  }
+
+  .js-back-img {
+    margin-bottom: 3.5rem;
+  }
+
+  .fa-arrow-right {
+    transform: rotate(90deg);
+  }
+  /*
+  HAMBURGER MENU
+  */
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 78%;
+  }
 }
 
 /*******ANIMATIONS************/
 .heading,
 .header-bar,
-.bullet {
+.bullet,
+.js-about,
+.js-skills,
+.project-sec-1,
+.project-sec-2 {
   opacity: 0;
 }
 
@@ -449,15 +572,17 @@ section h2 {
 .bar-about.animate__animated,
 .bar-portfolio.animate__animated,
 .bar-contact.animate__animated,
-.bullet.animate__animated,
+.js-bul1.animate__animated,
+.js-bul2.animate__animated,
+.js-bul3.animate__animated,
+.js-bul4.animate__animated,
+.js-about.animate__animated,
+.js-skills.animate__animated,
 .js-back-img.animate__animated,
-.js-back-txt.animate__animated {
+.js-back-txt.animate__animated,
+.js-budg-img.animate__animated,
+.js-budg-txt.animate__animated,
+.js-third-img.animate__animated,
+.js-third-txt.animate__animated {
   opacity: 1;
 }
-
-/*
-.project-sec-1,
-.project-sec-2  {
-  opacity: 0;
-}
-*/
