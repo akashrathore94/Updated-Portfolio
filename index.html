@@ -9,17 +9,22 @@
       content="I'm a front-end developer from Delhi, India. I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best experience suited to their device and browser."
     />
     <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="images/icon.svg" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
-    <title>akashrathore.in</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>akashrathore.in</title>
   </head>
 
   <body>
@@ -28,9 +33,16 @@
         <div id="large-header" class="large-header">
           <canvas id="demo-canvas"></canvas>
           <div class="main-title">
-            <h1>Hello, I'm <span class="thin">Akash Rathore</span>.</h1>
-            <h1>I'm a web developer.</h1>
-            <a href="#about">View my work<i class="fa fa-arrow-right"></i></a>
+            <h1 class="animate__animated animate__bounceInLeft del">
+              Hello, I'm
+              <span class="thin">Akash Rathore</span>.
+            </h1>
+            <h1 class="animate__animated animate__bounceInRight del">
+              I'm a web developer.
+            </h1>
+            <a href="#about" class="animate__animated animate__bounceIn del"
+              >View my work<i class="fa fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -56,11 +68,13 @@
 
     <section class="about" id="about">
       <div class="sub-section">
-        <div class="heading"><h2>About</h2></div>
+        <div class="heading h-about">
+          <h2>About</h2>
+        </div>
 
-        <div class="header-bar"></div>
+        <div class="header-bar bar-about"></div>
 
-        <div class="label">
+        <!-- <div class="label">
           <div class="bullet">
             <div class="hex-wrap">
               <div class="hexagon">
@@ -122,6 +136,77 @@
               <div class="label-text">
                 Websites don't have to be static,<br />I love making pages come
                 to life.
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="label">
+          <div class="label-1">
+            <div class="bullet">
+              <div class="hex-wrap">
+                <div class="hexagon">
+                  <i class="material-icons" id="speed">speed</i>
+                </div>
+              </div>
+              <div class="animated">
+                <div class="label-heading">
+                  Fast
+                </div>
+                <div class="label-text">
+                  Fast load times and lag free interaction, my highest priority.
+                </div>
+              </div>
+            </div>
+            <div class="bullet">
+              <div class="hex-wrap">
+                <div class="hexagon">
+                  <i class="material-icons" id="speed">phonelink</i>
+                </div>
+              </div>
+              <div class="animated">
+                <div class="label-heading">
+                  Responsive
+                </div>
+                <div class="label-text">
+                  My layouts will work on any device, big or small.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="label-1">
+            <div class="bullet">
+              <div class="hex-wrap">
+                <div class="hexagon">
+                  <i class="material-icons" id="speed">emoji_objects</i>
+                </div>
+              </div>
+              <div class="animated">
+                <div class="label-heading">
+                  Intuitive
+                </div>
+                <div class="label-text">
+                  Strong preference for easy to use, intuitive UX/UI.
+                </div>
+              </div>
+            </div>
+            <div class="bullet">
+              <div class="hex-wrap">
+                <div class="hexagon">
+                  <i class="material-icons" id="speed"
+                    >miscellaneous_services</i
+                  >
+                </div>
+              </div>
+              <div class="animated">
+                <div class="label-heading">
+                  Dynamic
+                </div>
+                <div class="label-text">
+                  Websites don't have to be static,I love making pages come to
+                  life.
+                </div>
               </div>
             </div>
           </div>
@@ -187,7 +272,7 @@
                     class="skills-img"
                   />
                 </div>
-                <div class="img-desc label-text">Performace</div>
+                <div class="img-desc label-text">Robust Performace</div>
               </div>
 
               <div class="img-box">
@@ -198,7 +283,7 @@
                     class="skills-img"
                   />
                 </div>
-                <div class="img-desc label-text">Animations</div>
+                <div class="img-desc label-text">Smooth Animations</div>
               </div>
 
               <div class="img-box">
@@ -219,19 +304,19 @@
 
     <section class="portfolio" id="portfolio">
       <div class="sub-section">
-        <div class="heading"><h2>Projects</h2></div>
-        <div class="header-bar"></div>
+        <div class="heading h-portfolio"><h2>Projects</h2></div>
+        <div class="header-bar bar-portfolio"></div>
       </div>
 
       <div class="portfolio-sub-section portfolio-1">
         <div class="project">
-          <div class="project-sec-1">
+          <div class="project-sec-1 js-back-img">
             <img
               src="images/laptop-tablet-phone-backstage.png"
               alt="backstage"
             />
           </div>
-          <div class="project-sec-2">
+          <div class="project-sec-2 js-back-txt">
             <div class="label-heading">
               The Backstage
             </div>
@@ -291,8 +376,8 @@
 
     <section class="contact" id="contact">
       <div class="sub-section">
-        <div class="heading"><h2>Contact</h2></div>
-        <div class="header-bar"></div>
+        <div class="heading h-contact"><h2>Contact</h2></div>
+        <div class="header-bar bar-contact"></div>
       </div>
     </section>
 
