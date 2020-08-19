@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: mont;
+  overflow-x: hidden;
 }
 
 .large-header {
@@ -112,18 +113,20 @@ body {
 }
 
 nav {
-  min-height: 10vh;
-  padding: 2rem;
+  padding: 1.8rem;
   margin: auto;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-nav h1,
+nav h1 {
+  flex: 2 1 2rem;
+}
 nav ul {
-  flex: 1;
+  flex: 3 1 5rem;
 }
 
 nav ul {
@@ -149,7 +152,6 @@ section {
 }
 
 .about {
-  min-height: 50vh;
   background-color: white;
 }
 
@@ -172,7 +174,7 @@ section h2 {
   margin: 20px auto 100px auto;
 }
 
-.label {
+/* .label {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -181,6 +183,22 @@ section h2 {
 .bullet {
   width: 24%;
   background-color: white;
+} */
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.bullet {
+  width: 46%;
+  margin-bottom: 8rem;
 }
 
 .hexagon {
@@ -243,7 +261,6 @@ section h2 {
 
 .sub-about {
   min-height: 30vh;
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -261,8 +278,8 @@ section h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 60%;
-  padding: 10px 0;
+  width: 62%;
+  padding: 2rem 0;
   background-color: rgb(238, 238, 238, 0.7);
   border-radius: 15px;
 }
@@ -270,6 +287,8 @@ section h2 {
 .sub-about-2 .row {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .skills-img {
@@ -278,7 +297,7 @@ section h2 {
 }
 
 .img-box {
-  width: 15%;
+  padding: 0 1rem;
 }
 
 .img-con {
@@ -385,3 +404,60 @@ section h2 {
 .active {
   color: #e31b6d;
 }
+
+@media only screen and (max-width: 1120px) {
+  .label {
+    display: block;
+  }
+
+  .label-1 {
+    width: 100%;
+  }
+  .sub-about {
+    display: block;
+  }
+  .sub-about-1 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .sub-about-2 {
+    width: 100%;
+  }
+  .sub-about-2 .row {
+    padding: 0 2rem;
+  }
+
+  .label-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+/*******ANIMATIONS************/
+.heading,
+.header-bar,
+.bullet {
+  opacity: 0;
+}
+
+.h-about.animate__animated,
+.h-portfolio.animate__animated,
+.h-contact.animate__animated,
+.bar-about.animate__animated,
+.bar-portfolio.animate__animated,
+.bar-contact.animate__animated,
+.bullet.animate__animated,
+.js-back-img.animate__animated,
+.js-back-txt.animate__animated {
+  opacity: 1;
+}
+
+/*
+.project-sec-1,
+.project-sec-2  {
+  opacity: 0;
+}
+*/
