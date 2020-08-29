@@ -757,3 +757,41 @@ footer {
     max-width: 700px;
   }
 }
+
+
+/*******ANIMATIONS************/
+.heading,
+.header-bar,
+.bullet,
+.js-about,
+.js-skills,
+.project-sec-1,
+.project-sec-2,
+.highlight,
+.contact-form {
+  opacity: 0;
+}
+
+
+.h-about.animate__animated,
+.h-portfolio.animate__animated,
+.h-contact.animate__animated,
+.bar-about.animate__animated,
+.bar-portfolio.animate__animated,
+.bar-contact.animate__animated,
+.js-bul1.animate__animated,
+.js-bul2.animate__animated,
+.js-bul3.animate__animated,
+.js-bul4.animate__animated,
+.js-about.animate__animated,
+.js-skills.animate__animated,
+.js-back-img.animate__animated,
+.js-back-txt.animate__animated,
+.js-budg-img.animate__animated,
+.js-budg-txt.animate__animated,
+.js-third-img.animate__animated,
+.js-third-txt.animate__animated,
+.highlight.animate__animated,
+.contact-form.animate__animated {
+  opacity: 1;
+}
